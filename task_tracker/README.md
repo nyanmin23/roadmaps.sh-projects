@@ -6,6 +6,7 @@ A small file-based task tracker CLI written in Node.js. It stores tasks in `task
 
 - Node.js (v14+ recommended)
 - npm (comes with Node.js)
+ - Run `npm install` in the project root to install dependencies (for example: `yargs`).
 
 ## Install for development (recommended)
 
@@ -13,6 +14,7 @@ This project provides a local CLI name `task-cli`. To register it locally for de
 
 ```bash
 cd /path/to/task_tracker
+npm install
 npm link
 ```
 
@@ -98,25 +100,3 @@ task-cli list todo
 
 - If `task-cli` is not found after cloning the repo, run `npm link` in the project root.
 - If you see permission errors when doing a global install, prefer `npm link` for dev or use a node version manager like `nvm` and avoid `sudo`.
-
-## Contributing / Future improvements
-
-- Add unit tests and a small test harness for commands.
-- Make the data file location configurable (e.g., `~/.task-cli/tasks.json` or via env var).
-- Add more robust validation and better CLI output formatting.
-
-## What I don't know (questions for you)
-
-1. Do you want me to rename the `utils.js` exported functions from plural (e.g., `addTasks`) to singular (`addTask`) for clarity? I can update code accordingly.
-2. Do you want a preferred license (MIT, Apache-2.0, etc.) and author name to add to `package.json` and this README?
-3. Would you like me to add an `npm` publish workflow or instructions to publish this package?
-4. Any specific example tasks or usage we should include in the README to illustrate real usage?
-
----
-
-If you want, I can also:
-- Rename the functions for clearer public API and update imports (no breaking behavior expected internally),
-- Add a small `examples/` script that runs a sample flow (add -> list -> mark -> list),
-- Add a minimal test script and an npm script to run it.
-
-Tell me which of the above you'd like me to do next.
