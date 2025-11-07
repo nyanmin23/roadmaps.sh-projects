@@ -1,6 +1,6 @@
 # task-cli
 
-A small file-based task tracker CLI written in Node.js. It stores tasks in `tasks.json` and provides simple commands to add, update, delete, mark, and list tasks.
+A small file-based task tracker CLI written in Node.js. It stores tasks in `tasks.json` and provides simple commands to add, update, delete, mark, and list tasks. Project link - https://roadmap.sh/projects/task-tracker
 
 ## Prerequisites
 
